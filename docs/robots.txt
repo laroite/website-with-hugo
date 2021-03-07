@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://laroite.com/sitemap.xml
