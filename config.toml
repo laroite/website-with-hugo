@@ -1,88 +1,125 @@
-baseURL = "https://example.com"
-title = "Blonde"
-author = "wamo"
-languageCode = "en"
-DefaultContentLanguage = "en"
-enableInlineShortcodes = true
-theme = "Blonde"
-enableRobotsTXT = true
+############################ Default configuration #########################
+baseURL = "https://laroite.com/"
+languageCode = "es"
+# site title 
+title = "Northendlab | Blog Template"
+# theme
+theme = "northendlab-hugo"
+# post pagination
+paginate = "5"
+# post excerpt
+summaryLength = "10"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
 
-# Please enable this feature if the site is available in Japanese, Chinese or Korean.
-#hasCJKLanguage = true
+[outputs]
+home = ["HTML", "AMP", "RSS", "JSON"]
 
-# If you're using Google Analytics, you can enable this feature.
-#googleAnalytics = "G-1234567890"
+########################## Plugings ######################################
 
-# Disqus Comment System
-#disqusShortname = ""
+# css plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
 
+# js plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+
+
+########################### Navigation ###################################
+
+# main menu
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 1
+
+[[menu.main]]
+URL = "tools"
+name = "tools"
+weight = 2
+
+# footer menu
+[[menu.footer]]
+URL = "contact"
+name = "Contact"
+weight = 1
+
+[[menu.footer]]
+URL = "tools"
+name = "tools"
+weight = 2
+
+
+######################### Default Parameters ###########################
 [params]
-# The number of articles to be displayed on a single page.
-paginator_pages = "5"
+# home
+home = "Home"
+# logo
+logo = "images/logo.svg"
+# meta data
+author = "Themefisher"
+description = "This is meta description"
+# google tag manager
+google_tag_manager = "" # your id
+# contact form action
+contact_form_action = "#" # contact form works with : https://formspree.io
+# copyright
+copyright = "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
 
-# Enable this if you want the archive list to be in a drop-down format.
-archive_dropdown = "false"
+# preloader
+[params.preloader]
+enable = true
+preloader = "" # use png, jpg, svg or gif format
 
-  [params.post]
-    # See the Tailwind CSS documentation to set it up.
-    # Recommended settings are h-32 to h-48.
-    # https://tailwindcss.com/docs/height
-    thumbnail_height = "h-48"
+# search
+[params.search]
+enable = true
 
-    # https://tailwindcss.com/docs/width
-    thumbnail_width = "w-auto"
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
 
-[menu]
+####################### banner #######################################
+[params.banner]
+bgImage = "images/banner/banner-bg.svg"
+title = "Hi, I'm John Smith Doe. <br> I help people make the  worlds best software"
+image = "images/banner/illustration.svg"
 
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 2
+######################## call to action ###############################
+[params.cta]
+enable = true
+image = "images/hugo-muscot.svg"
+title = "Get the best hugo templates"
+description = "Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+[params.cta.button]
+enable = true
+label = "Visit Here"
+link = "https://gethugothemes.com/shop/"
 
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 3
 
-[taxonomies]
-category = "categories"
-tag = "tags"
-archive = "archives"
-
-[privacy]
-
-  [privacy.vimeo]
-    disabled = false
-    simple = true
-
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
-
-  [privacy.instagram]
-    disabled = false
-    simple = true
-
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
-
-[services]
-
-  [services.instagram]
-    disableInlineCSS = true
-
-  [services.twitter]
-    disableInlineCSS = true
-
-[build]
-  writeStats = true
+############################## Social Site ##########################
+[[params.social]]
+icon = "ti-facebook" # themify icon pack https://themify.me/themify-icons
+link = "#"
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
+link = "#"
+[[params.social]]
+icon = "ti-github" # themify icon pack https://themify.me/themify-icons
+link = "#"
+[[params.social]]
+icon = "ti-linkedin" # themify icon pack https://themify.me/themify-icons
+link = "#"

@@ -2,78 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/</loc>
-    <lastmod>2020-08-14T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/categories/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/image-test/</loc>
-    <lastmod>2020-08-14T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/categories/design-tools/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/</loc>
-    <lastmod>2020-08-14T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/categories/development-tools/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/</loc>
-    <lastmod>2020-08-14T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/categories/hugo/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/themes/</loc>
-    <lastmod>2020-08-14T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/categories/meta-data/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/my-awesome-blog-post.1/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/my-awesome-blog-post.2/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/my-awesome-blog-post.3/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/my-awesome-blog-post.4/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/my-awesome-blog-post/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/posts/my-awesome-blog-post.1/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/posts/my-awesome-blog-post.2/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/posts/my-awesome-blog-post.3/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/posts/my-awesome-blog-post.4/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/posts/my-awesome-blog-post/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/my-awesome-blog-post-2/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/my-awesome-blog-post-3/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/my-awesome-blog-post-4/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/my-awesome-blog-post-5/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/my-awesome-blog-post-6/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/posts/my-awesome-blog-post-2/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/about/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <loc>https://laroite.com/posts/my-awesome-blog-post-3/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/archives/2019/03/</loc>
+    <loc>https://laroite.com/posts/my-awesome-blog-post-4/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/archives/2020/08/</loc>
+    <loc>https://laroite.com/posts/my-awesome-blog-post-5/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/archives/</loc>
+    <loc>https://laroite.com/posts/my-awesome-blog-post-6/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/contact/</loc>
+    <loc>https://laroite.com/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://laroite.com/posts/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://laroite.com/categories/seo-learning/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://laroite.com/tools/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://laroite.com/author/</loc>
+  </url><url>
+    <loc>https://laroite.com/contact/</loc>
+  </url><url>
+    <loc>https://laroite.com/contact/</loc>
+  </url><url>
+    <loc>https://laroite.com/author/john-doe/</loc>
+  </url><url>
+    <loc>https://laroite.com/author/mark-dinn/</loc>
+  </url><url>
+    <loc>https://laroite.com/search/</loc>
+  </url><url>
+    <loc>https://laroite.com/tags/</loc>
+  </url><url>
+    <loc>https://laroite.com/tools/</loc>
   </url>
 </urlset>
