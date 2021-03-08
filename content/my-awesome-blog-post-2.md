@@ -2,7 +2,7 @@
 title = "Jaaaaa second blog post"
 image = "/images/post/post-2.jpg"
 author = "John Doe"
-date = 2019-11-07T05:00:00Z
+date = 2020-01-07T05:00:00Z
 description = "This is meta description"
 categories = ["Design Tools"]
 type = "post"
