@@ -2,6 +2,17 @@
 <footer class="py-4 bg-light border-top">
   <div class="container">
     <div class="row justify-content-between align-items-center">
+      <div class="next-post">
+        {{ if .NextPage }}
+        <a class="link-reverse" href="{{ .NextPage.Permalink }}?ref=footer">« {{ .NextPage.Title | truncate 50 "..." }}</a>
+        {{ end }}
+      </div>
+      
+      <div class="previous-post">
+        {{ if .PrevPage }}
+        <a class="link-reverse" href="{{ .PrevPage.Permalink }}?ref=footer">{{ .PrevPage.Title | truncate 50 "..."}} »</a>
+        {{ end }}
+      </div>
       <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
         <a href="{{ .Site.BaseURL }}" class="d-block pb-3"><img src="{{ .Site.Params.logo | relURL }}" class="img-fluid" alt="{{ .Site.Title }}"></a>
       </div>

@@ -6,7 +6,16 @@
     <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}">{{ . | title }}</a>
     {{ end }}
   </div>
+  <div style="float: left;">
+  {{ if .Params.Image }}
+  <div style="width: 45%; float: right;">
+        <a href="{{ .Permalink }}"><img src="{{ .Params.Image | relURL }}" class="img-fluid w-100 mb-4" style="border-radius: 20px" alt="{{ .Title | markdownify }}"></a>
+  </div>
+  {{ end }}
+  <div style="width: 50%; float: left;">
   <p>{{.Summary}}</p>
+  </div>
+  </div>
   <div class="mb-3 post-meta">
     {{range .Params.Tags }} <a href="{{ `tags/` | relLangURL}}{{ . | urlize | lower }}">#{{ . | title }}</a>,  {{ end }}
   </div>

@@ -22,15 +22,16 @@
         </div>
       </div>
       <div class="col-lg-8 mx-auto block shadow">
-        {{ $related := .Site.RegularPages.Related . | first 5 }}
-        {{ with $related }}
-        <h3>See Also</h3>
-        <ul>
-          {{ range . }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        <div class="previous-post" style="float: right;">
+          {{ if .PrevPage }}
+          <a class="link-reverse mb-3" href="{{ .PrevPage.Permalink }}?ref=footer">{{ .PrevPage.Title | truncate 50 "..."}} »</a>
           {{ end }}
-        </ul>
-        {{ end }}
+        </div>
+        <div class="next-post mb-3" style="float: left;">
+          {{ if .NextPage }}
+          <a class="link-reverse" href="{{ .NextPage.Permalink }}?ref=footer">« {{ .NextPage.Title | truncate 50 "..." }}</a>
+          {{ end }}
+        </div>
       </div>
       {{ if .Site.DisqusShortname}}
       <div class="col-lg-8 mx-auto block shadow">
