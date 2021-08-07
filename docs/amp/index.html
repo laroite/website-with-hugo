@@ -422,13 +422,13 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P5LV3DHXJM"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-P5LV3DHXJM');
+  function googlean(){
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P5LV3DHXJM');
+  }
 </script>
 <div id="js-cookie-box-overlay" class="overlay hide-overlay">
   <div id="js-cookie-box" class="cookie-box cookie-box-hide">
@@ -436,7 +436,7 @@
     <br>
     <h5>Selecciona Tus Preferencias de Cookies</h5>
   	<p>Este sitio usa cookies.</p>
-    <form>
+    <form onSubmit="googlean()">
       <input type="checkbox" name="vehicle1" value="Bike">
       <label for="vehicle1"> I have a bike</label><br>
       <input type="checkbox" name="vehicle2" value="Car">
