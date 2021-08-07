@@ -196,11 +196,16 @@
   gtag('config', 'G-NX68GE0KX2');
 }
 </script>
+<script>
+  function NoCookies() {
+
+}
+</script>
 <div id="js-cookie-box-overlay" class="overlay hide-overlay">
   <div id="js-cookie-box" class="cookie-box cookie-box-hide">
     <h3>¡Bienvenido a laroite!</h3>
     <br>
-    <h5>Selecciona Tus Preferencias de Cookies</h5>
+    <h5>Selecciona tus preferencias de cookies</h5>
   	<p>Este sitio usa cookies.</p>
     <form onSubmit="googlean()">
       <input type="checkbox" name="vehicle1" value="Bike">
@@ -209,7 +214,8 @@
       <label for="vehicle2"> I have a car</label><br>
       <input type="checkbox" name="vehicle3" value="Boat" checked>
       <label for="vehicle3"> I have a boat</label><br><br>
-      <input id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2" type="submit" value="Submit">
+      <span id="js-cookie-button-customize" onclick="NoCookies()" class="btn btn-sm btn-outline-primary ml-2 right-button">Personalizar cookies</span>
+      <input id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2" type="submit" value="Aceptar todas">
     </form>
     <br>
   </div>
@@ -219,11 +225,18 @@
 		const cookieBox = document.getElementById('js-cookie-box');
     const cookieBoxOverlay = document.getElementById('js-cookie-box-overlay');
 		const cookieButton = document.getElementById('js-cookie-button');
+    const cookieButtonCustomize = document.getElementById('js-cookie-button-customize');
 		if (!Cookies.get('cookie-box')) {
-      googlean();
 			cookieBox.classList.remove('cookie-box-hide');
       cookieBoxOverlay.classList.remove('hide-overlay');
 			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+        cookieBoxOverlay.classList.add('hide-overlay');
+			};
+      cookieButtonCustomize.onclick = function () {
 				Cookies.set('cookie-box', true, {
 					expires:  2 
 				});
