@@ -468,6 +468,7 @@
     const cookieBoxOverlay = document.getElementById('js-cookie-box-overlay');
 		const cookieButton = document.getElementById('js-cookie-button');
 		if (!Cookies.get('cookie-box')) {
+      googlean();
 			cookieBox.classList.remove('cookie-box-hide');
       cookieBoxOverlay.classList.remove('hide-overlay');
 			cookieButton.onclick = function () {
