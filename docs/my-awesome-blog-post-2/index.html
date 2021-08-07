@@ -215,20 +215,46 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">I Accept</span>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P5LV3DHXJM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P5LV3DHXJM');
+</script>
+<div id="js-cookie-box-overlay" class="overlay hide-overlay">
+  <div id="js-cookie-box" class="cookie-box cookie-box-hide">
+    <h3>¡Bienvenido a laroite!</h3>
+    <br>
+    <h5>Selecciona Tus Preferencias de Cookies</h5>
+  	<p>Este sitio usa cookies.</p>
+    <form>
+      <input type="checkbox" name="vehicle1" value="Bike">
+      <label for="vehicle1"> I have a bike</label><br>
+      <input type="checkbox" name="vehicle2" value="Car">
+      <label for="vehicle2"> I have a car</label><br>
+      <input type="checkbox" name="vehicle3" value="Boat" checked>
+      <label for="vehicle3"> I have a boat</label><br><br>
+      <input id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2" type="submit" value="Submit">
+    </form>
+    <br>
+  </div>
 </div>
 <script>
 	(function ($) {
 		const cookieBox = document.getElementById('js-cookie-box');
+    const cookieBoxOverlay = document.getElementById('js-cookie-box-overlay');
 		const cookieButton = document.getElementById('js-cookie-button');
 		if (!Cookies.get('cookie-box')) {
 			cookieBox.classList.remove('cookie-box-hide');
+      cookieBoxOverlay.classList.remove('hide-overlay');
 			cookieButton.onclick = function () {
 				Cookies.set('cookie-box', true, {
 					expires:  2 
 				});
 				cookieBox.classList.add('cookie-box-hide');
+        cookieBoxOverlay.classList.add('hide-overlay');
 			};
 		}
 	})(jQuery);

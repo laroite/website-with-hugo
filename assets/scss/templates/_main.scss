@@ -4,6 +4,53 @@
 } */
 
 /* banner */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.01);
+  transition: opacity 350ms;
+  visibility: visible;
+  opacity: 1;
+  z-index: 9999999;
+}
+
+.hide-overlay {
+  visibility: hidden;
+}
+
+.btn {
+  background: $primary-color !important;
+  color: $secondary-color !important;
+}
+
+.btn:hover {
+  background: $primary-color-hover !important;
+  color: $white !important;
+  border-color: $primary-color-hover !important;
+}
+
+#js-cookie-button {
+  float: right !important;
+}
+
+.cookie-box {
+  background: $light !important;
+  border-radius: 10px;
+  top: 20%;
+  bottom: 20% !important;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  color: $black !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: auto;
+  text-align: left !important;
+}
+
 .banner {
   padding: 220px 0 120px;
   position: relative;
