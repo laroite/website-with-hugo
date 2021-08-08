@@ -3,7 +3,67 @@
   background-image: url(../images/backgrounds/pattern.png);
 } */
 
-/* banner */
+/*Cookies*/
+
+#config-cookies {
+  display: none;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.switch-text {
+  display: block;
+  transform: translateX(3.9rem) translateY(-2.2rem);
+  width: 75%;
+}
+
+.switch-button {
+  display: inline-block;
+  text-align: left;
+  height: 1.5rem;
+  width: auto;
+}
+
+.switch-button .switch-button__checkbox {
+  display: none;
+}
+.switch-button .switch-button__label {
+  background-color: $white;
+  overflow: visible;
+  box-shadow: inset 0px 0px 0px 2px $primary-color;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 3rem;
+  display: inline-block;
+  position: relative;
+}
+.switch-button .switch-button__label:before {
+  transition: .1s;
+  display: block;
+  position: absolute;
+  margin: .25rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: $primary-color;
+  content: '';
+  border-radius: 50%;
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+  background-color: $primary-color;
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+  transform: translateX(1.5rem);
+  background-color: $secondary-color;
+}
+.switch-button .switch-button__disabled:checked + .switch-button__label {
+  background-color: $white;
+  box-shadow: inset 0px 0px 0px 2px gray;
+}
+.switch-button .switch-button__disabled:checked + .switch-button__label:before {
+  background-color: $text-color;
+}
 
 .overlay {
   position: fixed;
@@ -25,6 +85,7 @@
 .btn {
   background: $primary-color !important;
   color: $secondary-color !important;
+  margin-bottom: 5px;
 }
 
 .btn:hover {
@@ -45,7 +106,9 @@
   background: $light !important;
   border-radius: 10px;
   top: 20%;
-  bottom: 20% !important;
+  height: auto !important;
+  max-height: 75%;
+  bottom: auto !important;
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
@@ -54,6 +117,8 @@
   overflow: auto;
   text-align: left !important;
 }
+
+/* banner */
 
 .banner {
   padding: 220px 0 120px;

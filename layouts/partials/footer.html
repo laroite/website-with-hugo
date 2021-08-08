@@ -57,10 +57,21 @@
 
   gtag('config', 'G-NX68GE0KX2');
 }
-</script>
-<script>
-  function NoCookies() {
-
+  function EditCookies() {
+    var formopt = document.getElementById("config-cookies");
+    formopt.style.display = "block";
+    var formopt = document.getElementById("js-cookie-button-custom");
+    formopt.style.display = "none";
+}
+  function ApplyCookies() {
+    var checkbox=document.getElementById('switch-label2');
+    if (checkbox.checked)
+    {
+      googlean();
+    }
+}
+function ApplyAll() {
+      googlean();
 }
 </script>
 <div id="js-cookie-box-overlay" class="overlay hide-overlay">
@@ -69,16 +80,23 @@
     <br>
     <h5>Selecciona tus preferencias de cookies</h5>
   	<p>Este sitio usa cookies.</p>
-    <form onSubmit="googlean()">
-      <input type="checkbox" name="vehicle1" value="Bike">
-      <label for="vehicle1"> I have a bike</label><br>
-      <input type="checkbox" name="vehicle2" value="Car">
-      <label for="vehicle2"> I have a car</label><br>
-      <input type="checkbox" name="vehicle3" value="Boat" checked>
-      <label for="vehicle3"> I have a boat</label><br><br>
-      <span id="js-cookie-button-customize" onclick="NoCookies()" class="btn btn-sm btn-outline-primary ml-2 right-button">Personalizar cookies</span>
+    <form id="config-cookies" onSubmit="ApplyCookies()">
+      <div class="switch-button">
+        <input type="checkbox" name="switch-button-disabled" id="switch-label" class="switch-button__checkbox switch-button__disabled" checked disabled>
+        <label for="switch-label" class="switch-button__label switch-button__disabled"></label>
+        <p class="switch-text">Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola de nuevo</p>
+      </div>
+      <div class="switch-button">
+        <input type="checkbox" name="switch-button-google" id="switch-label2" class="switch-button__checkbox">
+        <label for="switch-label2" class="switch-button__label"></label>
+        <p class="switch-text">Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola de nuevo</p>
+      </div>
+      <input id="js-cookie-button-customize" class="btn btn-sm btn-outline-primary ml-2" type="submit" value="Permitir la selección">
+    </form>
+    <form id="allow-all-cookies" onSubmit="ApplyAll()">
       <input id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2" type="submit" value="Aceptar todas">
     </form>
+    <span id="js-cookie-button-custom" onclick="EditCookies()" class="btn btn-sm btn-outline-primary ml-2 right-button">Personalizar cookies</span>
     <br>
   </div>
 </div>
