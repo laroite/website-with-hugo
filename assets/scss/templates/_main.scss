@@ -21,6 +21,10 @@
   overflow: hidden;
 }
 
+#js-cookie-button-cancel {
+  display: none;
+}
+
 .switch-text {
   display: block;
   transform: translateX(3.9rem) translateY(-2.2rem);
@@ -46,6 +50,7 @@
   border-radius: 3rem;
   display: inline-block;
   position: relative;
+  cursor: pointer;
 }
 .switch-button .switch-button__label:before {
   transition: .1s;
@@ -93,6 +98,7 @@
 .btn {
   background: $primary-color !important;
   color: $secondary-color !important;
+  text-transform: none;
   margin-bottom: 2px;
 }
 
@@ -113,7 +119,7 @@
 .cookie-box {
   background: $light !important;
   border-radius: 10px;
-  top: 20%;
+  top: 15%;
   height: auto !important;
   max-height: 78%;
   bottom: auto !important;

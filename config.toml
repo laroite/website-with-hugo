@@ -89,7 +89,7 @@ enable = true
 # cookies
 [params.cookies]
 enable = true
-expire_days = 2
+expire_days = 365
 
 ####################### banner #######################################
 [params.banner]
