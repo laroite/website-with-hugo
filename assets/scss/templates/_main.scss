@@ -206,7 +206,7 @@
   }
   .img-cont {
     -webkit-mask-image:-webkit-gradient(linear, right bottom, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
     max-height: 380px;
   }
   .article-content {
