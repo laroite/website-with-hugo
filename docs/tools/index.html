@@ -376,6 +376,9 @@
   function EditCookies() {
     var formopt = document.getElementById("config-cookies");
     formopt.style.display = "block";
+    var formopt = document.getElementById("js-cookie-box");
+    formopt.style.top = "10%";
+    formopt.style.maxHeight = "88%";
     var formopt = document.getElementById("js-cookie-button-custom");
     formopt.style.display = "none";
 }
@@ -394,8 +397,7 @@ function ApplyAll() {
   <div id="js-cookie-box" class="cookie-box cookie-box-hide">
     <h3>¡Bienvenido a laroite!</h3>
     <br>
-    <h5>Selecciona tus preferencias de cookies</h5>
-    <br>
+    <h5>Selecciona tus preferencias de cookies:</h5>
   	<p><B>Esta página web usa cookies.</B> Las cookies de este sitio web se utilizan para obtener estadísticas anónimas, lo que nos permite medir el número de visitantes y la repercusión que está teniendo nuestro contenido. Estos datos son procesados por Google, la empresa que nos provee el servicio de rastreo y analíticas. No utilizamos estos datos para ningún otro fin, ni los compartimos con terceros.</p>
     <p></p>
     <form id="config-cookies" onSubmit="ApplyCookies()">
@@ -412,10 +414,9 @@ function ApplyAll() {
       <input id="js-cookie-button-customize" class="btn btn-sm btn-outline-primary ml-2" type="submit" value="Permitir la selección">
     </form>
     <form id="allow-all-cookies" onSubmit="ApplyAll()">
-      <input id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2" type="submit" value="Aceptar todas">
+      <input id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2" type="submit" value="Acepto">
+      <span id="js-cookie-button-custom" onclick="EditCookies()" class="btn btn-sm btn-outline-primary ml-2 right-button">Personalizar</span>
     </form>
-    <span id="js-cookie-button-custom" onclick="EditCookies()" class="btn btn-sm btn-outline-primary ml-2 right-button">Personalizar cookies</span>
-    <br>
   </div>
 </div>
 <script>
