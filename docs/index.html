@@ -454,17 +454,19 @@ function ApplyAll() {
     <h3>¡Bienvenido a laroite!</h3>
     <br>
     <h5>Selecciona tus preferencias de cookies</h5>
-  	<p>Este sitio usa cookies.</p>
+    <br>
+  	<p><B>Esta página web usa cookies.</B> Las cookies de este sitio web se utilizan para obtener estadísticas anónimas, lo que nos permite medir el número de visitates y la repercución que está teniendo nuestro contenido. Estos datos son procesados por Google, la empresa que nos provee el servicio de rastreo y analíticas. No utilizamos estos datos para ningún otro fin, ni los compartimos con terceros.</p>
+    <p></p>
     <form id="config-cookies" onSubmit="ApplyCookies()">
       <div class="switch-button">
         <input type="checkbox" name="switch-button-disabled" id="switch-label" class="switch-button__checkbox switch-button__disabled" checked disabled>
         <label for="switch-label" class="switch-button__label switch-button__disabled"></label>
-        <p class="switch-text">Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola de nuevo</p>
+        <p class="switch-text"><B>Cookies operativas:</B> Las cookies operativas son necesarias para que esta página web sea utilizable. Se han incluido únicamente para poder omitir este mismo menú que le permite configurar las preferencias de cookies, en el caso de que ya las haya configurado anteriormente.</p>
       </div>
       <div class="switch-button">
         <input type="checkbox" name="switch-button-google" id="switch-label2" class="switch-button__checkbox">
         <label for="switch-label2" class="switch-button__label"></label>
-        <p class="switch-text">Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola Hola Mundo Hola de nuevo</p>
+        <p class="switch-text"><B>Cookies de estadísticas:</B> Las cookies de estadísticas las empleamos para conocer el número de visitantes que tiene la página web y la forma en la que interactúan los visitantes. La información que se reúne es anónima. En nuestro caso utilizamos para este fin <B>Google Tag Manager</B> y la herramienta <B>Google Analytics</B>. Para más información, consulte aquí la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>.</p>
       </div>
       <input id="js-cookie-button-customize" class="btn btn-sm btn-outline-primary ml-2" type="submit" value="Permitir la selección">
     </form>
