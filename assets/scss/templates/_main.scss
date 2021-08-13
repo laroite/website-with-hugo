@@ -14,28 +14,28 @@
   body.dark-theme #logodark {
     display: block;
   }
-  .navigation {
+  body.dark-theme .navigation {
     background-color:#3B3B3B;
   }
-  p {
+  body.dark-theme p {
     color: $white;
   }
-  .post-title {
+  body.dark-theme .post-title {
     color: $white;
   }
-  h2 {
+  body.dark-theme h2 {
     color: $white;
   }
-  h3 {
+  body.dark-theme h3 {
     color: $white;
   }
-  .post-meta {
+  body.dark-theme .post-meta {
     color: $white !important;
   }
-  .shadow {
+  body.dark-theme .shadow {
     background-color:#2B2B2B !important;
   }
-  .preview {
+  body.dark-theme .preview {
     background-color:#2B2B2B !important;
   }
 
