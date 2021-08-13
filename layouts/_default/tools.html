@@ -1,38 +1,39 @@
 {{ define "main" }}
 
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-3">
-        <div class="nav nav-tab flex-column" role="tablist" aria-orientation="vertical">
-          {{ range $index, $elemen:= .Site.Data.tools.tools }}
-          <a class="nav-link {{ if eq $index 0}} active {{ end }}" data-toggle="pill" href="#{{.title | urlize}}" role="tab">{{ .title }}</a>
-          {{ end }}
-        </div>
+<section class="tm-banner">
+  <!-- Flexslider -->
+  <div class="flexslider flexslider-banner">
+    <ul class="slides">
+      <li>
+        <div class="tm-banner-inner">
+        <h1 class="tm-banner-title">Precios <span class="tm-yellow-text">outlet</span> en <span class="tm-yellow-text">gafas</span></h1>
+        <p class="tm-banner-subtitle">de primeras marcas</p>
+        <a href="#more" class="tm-banner-link">Leer más</a>	
       </div>
-      <div class="col-9">
-        <div class="tab-content">
-          {{ range $index, $elemen:= .Site.Data.tools.tools }}
-          <div class="tab-pane fade {{ if eq $index 0}} show active {{ end }}" id="{{.title | urlize}}" role="tabpanel">
-            <div class="row">
-              {{ range .tool}}
-              <div class="col-md-6 mb-4">
-                <div class="card border-0 shadow">
-                  <img src="{{ .image | relURL }}" alt="{{ .name | markdownify }}" class="card-img-top">
-                  <div class="card-body">
-                    <h4 class="h5 mb-4"><a class="text-dark" href="{{ .link | safeURL }}">{{ .name | markdownify }}</a></h4>
-                    <a href="{{ .link | safeURL }}" class="btn btn-primary">Visit Site</a>
-                  </div>
-                </div>
-              </div>
-              {{ end }}
-            </div>
-          </div>
-          {{ end }}
-        </div>
+      <img class="i-big" src="img/banner-1.jpg" alt="Image" />
+      <img class="i-small" src="img/banner-1-s.jpg" alt="Image" />
+      </li>
+      <li>
+        <div class="tm-banner-inner">
+        <h1 class="tm-banner-title">Gafas <span class="tm-yellow-text">deportivas</span></h1>
+        <p class="tm-banner-subtitle">a precios sorprendentes</p>
+        <a href="gafas-deportivas.html" class="tm-banner-link">Leer más</a>	
       </div>
-    </div>
-  </div>
+      <img class="i-big" src="img/banner-2.jpg" alt="Image" />
+      <img class="i-small" src="img/banner-2-s.jpg" alt="Image" />
+      </li>
+      <li>
+        <div class="tm-banner-inner">
+        <h1 class="tm-banner-title">Gafas <span class="tm-yellow-text">en Promoción</span></h1>
+        <p class="tm-banner-subtitle">Gafas de marca adaptadas a tu bolsillo</p>
+        <a href="promo.html" class="tm-banner-link">Leer más</a>	
+      </div>
+      <img class="i-big" src="img/banner-3.jpg" alt="Image" />
+      <img class="i-small" src="img/banner-3-s.jpg" alt="Image" />
+      </li>
+    </ul>
+  </div>	
 </section>
+
 
 {{ end }}

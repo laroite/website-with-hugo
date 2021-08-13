@@ -4,7 +4,7 @@ image = "/images/post/post-2.jpg"
 author = "John Doe"
 date = 2020-01-07T05:00:00Z
 description = "This is meta description"
-categories = ["Design Tools"]
+categories = ["Design Tools","New"]
 type = "post"
 
 +++
