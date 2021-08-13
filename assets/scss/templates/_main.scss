@@ -6,8 +6,38 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   body {
-      background-color: red;
+      background-color: #1E1E1E;
       color: white;
+  }
+  #logo {
+    display: none;
+  }
+  #logodark {
+    display: block;
+  }
+  .navigation {
+    background-color:#3B3B3B;
+  }
+  p {
+    color: $white;
+  }
+  .post-title {
+    color: $white;
+  }
+  h2 {
+    color: $white;
+  }
+  h3 {
+    color: $white;
+  }
+  .post-meta {
+    color: $white !important;
+  }
+  .shadow {
+    background-color:#2B2B2B !important;
+  }
+  .preview {
+    background-color:#2B2B2B !important;
   }
 }
 

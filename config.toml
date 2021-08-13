@@ -67,6 +67,8 @@ weight = 2
 home = "Home"
 # logo
 logo = "images/logo.svg"
+# logo dark mode
+logoDark = "images/logo_d.svg"
 # meta data
 author = "Themefisher"
 description = "This is meta description"
