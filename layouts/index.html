@@ -1,18 +1,22 @@
 {{ define "main" }}
 
-<p><code>wrapAround: true</code></p>
 
 <!-- Flickity HTML init -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<div class="gallery js-flickity"
-  data-flickity-options='{ "wrapAround": true }'>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
+<div class="main-carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true }'>
+  {{ range .Pages }}
+  {{ if in .Params.categories "New"  }}
+      <div class="c-item">
+        <div class="c-tbox article-content">
+          <h2 class="c-title"><a class="post-title" href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+          <p class="article-summary">{{.Summary}}</p>
+          <a href="{{ .Permalink }}" class="btn btn-sm">Seguir leyendo</a>
+        </div>
+        <img class="c-img" src="{{ .Params.Image | relURL }}" alt="Image" />
+      </div>
+  {{ end }}
+  {{ end }}
 </div>
-
 
 <!-- /banner -->
 
