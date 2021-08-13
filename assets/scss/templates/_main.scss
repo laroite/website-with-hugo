@@ -4,15 +4,14 @@
 } */
 
 /* Dark mode */
-@media (prefers-color-scheme: dark) {
-  body {
+  body.dark-theme {
       background-color: #1E1E1E;
       color: white;
   }
-  #logo {
+  body.dark-theme #logo {
     display: none;
   }
-  #logodark {
+  body.dark-theme #logodark {
     display: block;
   }
   .navigation {
@@ -39,7 +38,6 @@
   .preview {
     background-color:#2B2B2B !important;
   }
-}
 
 .section {
   padding-top: 38px;
