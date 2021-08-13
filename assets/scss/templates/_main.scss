@@ -21,13 +21,11 @@
 .c-title {
   position: relative;
   color: $white !important;
-}
-
-.c-tbox h2 {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;  
   overflow: hidden;
+  font-size: 32px;
 }
 
 .c-tbox p {
@@ -52,7 +50,7 @@
   border-radius: 0px 10px 10px 0px;
   width: 45% !important;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*! Flickity v2.2.2
@@ -429,6 +427,12 @@ body { font-family: sans-serif; }
   .c-img {
     height: 380px;
   }
+  .c-titletext {
+    font-size: 30px !important;
+  }
+  .c-tbox {
+    width: 55% !important;
+  }
 }
 
 @media (max-width:767px){
@@ -437,6 +441,9 @@ body { font-family: sans-serif; }
   }
   .article {
     min-height: 380px;
+  }
+  .c-tbox p {
+    -webkit-line-clamp: 2;
   }
   .btn-article {
     transform: translateY(-1rem);
@@ -479,6 +486,17 @@ body { font-family: sans-serif; }
     white-space: nowrap !important;
     text-overflow: ellipsis !important;
   }
+  .c-tbox {
+    width: 65% !important;
+    padding-right: 120px;
+  }
+  .c-titletext {
+    font-size: 28px !important;
+  }
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media (max-width:480px){
@@ -491,11 +509,36 @@ body { font-family: sans-serif; }
   .article {
     min-height: 340px;
   }
+  .c-tbox {
+    width: 70% !important;
+    padding-right: 100px;
+  }
+  .flickity-prev-next-button {
+    width: 25px;
+    height: 25px;
+  }
+  .c-img {
+    -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.55)), to(rgba(0, 0, 0,  0)));
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.55), rgba(0,0,0,0));
+  }
+  .c-tbox {
+    width: 98% !important;
+    padding-right: 95px;
+    padding-left: 25%;
+    background-color: $black;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .c-title {
+    -webkit-line-clamp: 3;
+  }
+  .c-titletext {
+    font-size: 26px !important;
+  }
 }
 
 @media (max-width:400px){
   .c-img {
-    height: 240px;
+    height: 260px;
   }
   .img-cont {
     max-height: 300px;
@@ -508,6 +551,9 @@ body { font-family: sans-serif; }
     float: right;
     margin-right: 0.5%;
   }
+  .c-titletext {
+    font-size: 24px !important;
+  }
 }
 
 @media (max-width:320px){
@@ -519,6 +565,9 @@ body { font-family: sans-serif; }
   }
   .article {
     min-height: 270px;
+  }
+  .c-tbox p {
+    display: none;
   }
 }
 
@@ -534,6 +583,9 @@ body { font-family: sans-serif; }
   }
   .btn-article {
     visibility: hidden;
+  }
+  .c-title {
+    -webkit-line-clamp: 2;
   }
 }
 

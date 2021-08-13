@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-
+<!-- /banner -->
 <!-- Flickity HTML init -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <div class="main-carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true }'>
@@ -8,7 +8,7 @@
   {{ if in .Params.categories "New"  }}
       <div class="c-item">
         <div class="c-tbox article-content">
-          <h2 class="c-title"><a class="post-title" href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+          <h3 class="c-title"><a class="post-title c-titletext" href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h3>
           <p class="article-summary">{{.Summary}}</p>
           <a href="{{ .Permalink }}" class="btn btn-sm">Seguir leyendo</a>
         </div>
@@ -17,8 +17,6 @@
   {{ end }}
   {{ end }}
 </div>
-
-<!-- /banner -->
 
 <!-- blog -->
 <section class="section">
