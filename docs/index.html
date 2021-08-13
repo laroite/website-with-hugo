@@ -29,6 +29,7 @@
 
   
   
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 </head><body>
@@ -87,141 +88,18 @@
 </header>
 <!-- /navigation -->
 
-  <section class="carousel" aria-label="Gallery">
-    <ol class="carousel__viewport">
-     
-      
-      
+<p><code>wrapAround: true</code></p>
 
-      <li id="my-awesome-blog-post-2.md"
-      tabindex="0"
-      class="carousel__slide">
-        <a href=" https://laroite.com/my-awesome-blog-post-2/ ">
-          <h1 style = "position: absolute; margin: 70px 30px 30px 30px;" class="tm-banner-title">Esta Web se encuentra en construcción.</h1>
-          <img class="i-big c-img" src="/images/post/post-2.jpg" alt="Image" />
-        </a>
-    </div>
-  </li>
 
-     
-      
-      
-      
-
-      <li id="my-awesome-blog-post.1.md"
-      tabindex="0"
-      class="carousel__slide">
-        <a href=" https://laroite.com/my-awesome-blog-post.1/ ">
-          <h1 style = "position: absolute; margin: 70px 30px 30px 30px;" class="tm-banner-title">My awesome blog post</h1>
-          <img class="i-big c-img" src="/images/post/post-3.jpg" alt="Image" />
-        </a>
-    </div>
-  </li>
-
-     
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <li id="my-awesome-blog-post-4.md"
-      tabindex="0"
-      class="carousel__slide">
-        <a href=" https://laroite.com/my-awesome-blog-post-4/ ">
-          <h1 style = "position: absolute; margin: 70px 30px 30px 30px;" class="tm-banner-title">My awesome second blog post</h1>
-          <img class="i-big c-img" src="/images/post/post-3.jpg" alt="Image" />
-        </a>
-    </div>
-  </li>
-
-     
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </ol>
-    <aside class="carousel__navigation">
-      <ol class="carousel__navigation-list">
-        
-        
-        <li class="carousel__navigation-item">
-          <a href="#my-awesome-blog-post-2.md"
-             class="carousel__navigation-button">Go to slide</a>
-        </li>
-      
-      
-        
-        <li class="carousel__navigation-item">
-          <a href="#my-awesome-blog-post.1.md"
-             class="carousel__navigation-button">Go to slide</a>
-        </li>
-      
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <li class="carousel__navigation-item">
-          <a href="#my-awesome-blog-post-4.md"
-             class="carousel__navigation-button">Go to slide</a>
-        </li>
-      
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        
-      </ol>
-    </aside>
-  </section>
-
-</main>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<div class="gallery js-flickity"
+  data-flickity-options='{ "wrapAround": true }'>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+</div>
 
 
 

@@ -1,55 +1,17 @@
 {{ define "main" }}
 
-  <section class="carousel" aria-label="Gallery">
-    <ol class="carousel__viewport">
-     
-      {{ range .Pages }}
-      {{ if in .Params.categories "New"  }}
+<p><code>wrapAround: true</code></p>
 
-      <li id="{{ .File }}"
-      tabindex="0"
-      class="carousel__slide">
-        <a href=" {{ .Permalink }} ">
-          <h1 style = "position: absolute; margin: 70px 30px 30px 30px;" class="tm-banner-title">{{.Title}}</h1>
-          <img class="i-big c-img" src="{{ .Params.Image | relURL }}" alt="Image" />
-        </a>
-    </div>
-  </li>
-
-     <!-- <li id="carousel__slide1"
-          tabindex="0"
-          class="carousel__slide">
-        <div class="carousel__snapper">
-          <a href="#carousel__slide4"
-             class="carousel__prev">Go to last slide</a>
-          <a href="#carousel__slide2"
-             class="carousel__next">Go to next slide</a>
-        </div>
-        <div class="tm-banner-inner">
-          <h1 class="tm-banner-title">{{.Title}}</h1>
-          <a href="{{.Permalink}}" class="tm-banner-link">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>	
-        </div>
-        <img class="i-big" src="{{ .Params.Image | relURL }}" alt="Image" />
-        <img class="i-small" src="{{ .Params.Image | relURL }}" alt="Image" />
-      </li>-->
-      {{ end }}
-      {{ end }}
-    </ol>
-    <aside class="carousel__navigation">
-      <ol class="carousel__navigation-list">
-        {{ range .Pages }}
-        {{ if in .Params.categories "New"  }}
-        <li class="carousel__navigation-item">
-          <a href="#{{.File}}"
-             class="carousel__navigation-button">Go to slide</a>
-        </li>
-      {{ end }}
-      {{ end }}  
-      </ol>
-    </aside>
-  </section>
-
-</main>
+<!-- Flickity HTML init -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<div class="gallery js-flickity"
+  data-flickity-options='{ "wrapAround": true }'>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+</div>
 
 
 <!-- /banner -->
