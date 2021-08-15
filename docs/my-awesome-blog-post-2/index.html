@@ -45,8 +45,8 @@
   <div class="container">
     
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-      <a class="navbar-brand"href="https://laroite.com/"><img id="logo" class="img-fluid" src="/images/logo.svg" alt="Northendlab | Blog Template"></a>
-      <a class="navbar-brand"href="https://laroite.com/"><img id="logodark" class="img-fluid" src="/images/logo_d.svg" alt="Northendlab | Blog Template"></a>
+      <a class="navbar-brand" href="https://laroite.com/"><img class="img-fluid logo-dark" src="/images/logo_d.svg" alt="Northendlab | Blog Template">
+      <img class="img-fluid logo" src="/images/logo.svg" alt="Northendlab | Blog Template"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu h3"></i>
       </button>
@@ -158,7 +158,10 @@
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-        <a href="https://laroite.com/" class="d-block pb-3"><img src="/images/logo.svg" class="img-fluid" alt="Northendlab | Blog Template"></a>
+        <a href="https://laroite.com/" class="d-block pb-3">
+          <img src="/images/logo_d.svg" class="img-fluid logo-dark" alt="Northendlab | Blog Template">
+          <img src="/images/logo.svg" class="img-fluid logo" alt="Northendlab | Blog Template">
+        </a>
       </div>
       <div class="col-lg-4 text-center mb-4 mb-lg-0">
         <ul class="list-inline mb-0">
@@ -255,18 +258,18 @@
     <h4>¡Bienvenido a laroite!</h4>
     <br>
     <h5>Selecciona tus preferencias de cookies:</h5>
-  	<p><B>Esta página web usa cookies.</B> Las cookies de este sitio web se utilizan para obtener estadísticas anónimas, lo que nos permite medir el número de visitantes y la repercusión que está teniendo nuestro contenido. Estos datos son procesados por Google, la empresa que nos provee el servicio de rastreo y analíticas. No utilizamos estos datos para ningún otro fin, ni los compartimos con terceros.</p>
+  	<p><u>Esta página web usa cookies.</u> Las cookies de este sitio web se utilizan para obtener estadísticas anónimas, lo que nos permite medir el número de visitantes y la repercusión que está teniendo nuestro contenido. Estos datos son procesados por Google, la empresa que nos provee el servicio de rastreo y analíticas. No utilizamos estos datos para ningún otro fin, ni los compartimos con terceros.</p>
     <p></p>
     <form id="config-cookies" onSubmit="ApplyCookies()">
       <div class="switch-button">
         <input type="checkbox" name="switch-button-disabled" id="switch-label" class="switch-button__checkbox switch-button__disabled" checked disabled>
         <label for="switch-label" class="switch-button__label switch-button__disabled"></label>
-        <p class="switch-text"><B>Cookies operativas:</B> Las cookies operativas son necesarias para que esta página web sea utilizable. Se han incluido únicamente para poder omitir este mismo menú que le permite configurar las preferencias de cookies, en el caso de que ya las haya configurado anteriormente.</p>
+        <p class="switch-text"><u>Cookies operativas:</u> Las cookies operativas son necesarias para que esta página web sea utilizable. Se han incluido únicamente para poder omitir este mismo menú que le permite configurar las preferencias de cookies, en el caso de que ya las haya configurado anteriormente.</p>
       </div>
       <div class="switch-button">
         <input type="checkbox" name="switch-button-google" id="switch-label2" class="switch-button__checkbox">
         <label for="switch-label2" class="switch-button__label"></label>
-        <p class="switch-text"><B>Cookies de estadísticas:</B> Las cookies de estadísticas las empleamos para conocer el número de visitantes que tiene la página web y la forma en la que interactúan los visitantes. La información que se reúne es anónima. En nuestro caso utilizamos para este fin <B>Google Tag Manager</B> y la herramienta <B>Google Analytics</B>. Para más información, consulte aquí la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>.</p>
+        <p class="switch-text"><u>Cookies de estadísticas:</u> Las cookies de estadísticas las empleamos para conocer el número de visitantes que tiene la página web y la forma en la que interactúan los visitantes. La información que se reúne es anónima. En nuestro caso utilizamos para este fin Google Tag Manager y la herramienta Google Analytics. Para más información, consulte aquí la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>.</p>
       </div>
       <input id="js-cookie-button-customize" class="btn btn-sm btn-outline-primary ml-2" type="submit" value="Permitir la selección">
     </form>

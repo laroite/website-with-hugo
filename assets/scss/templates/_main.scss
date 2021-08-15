@@ -5,23 +5,20 @@
 
 /* Dark mode */
   body.dark-theme {
-      background-color: #1E1E1E;
-      color: white;
+      background-color: #18191A;
+      color: $white;
   }
-  body.dark-theme #logo {
-    display: none;
+  body.dark-theme .logo {
+    display: none !important;
   }
-  body.dark-theme #logodark {
-    display: block;
+  body.dark-theme .logo-dark {
+    display: inline-block;
   }
   body.dark-theme .navigation {
-    background-color:#3B3B3B;
+    background-color:#242526;
   }
   body.dark-theme p {
-    color: $white;
-  }
-  body.dark-theme .post-title {
-    color: $white;
+    color: #E4E6EB;
   }
   body.dark-theme h2 {
     color: $white;
@@ -29,15 +26,76 @@
   body.dark-theme h3 {
     color: $white;
   }
-  body.dark-theme .post-meta {
-    color: $white !important;
-  }
   body.dark-theme .shadow {
-    background-color:#2B2B2B !important;
+    background-color: #242526 !important;
   }
   body.dark-theme .preview {
-    background-color:#2B2B2B !important;
+    background-color: #242526 !important;
   }
+  body.dark-theme .nav-link {
+    color: $white !important;
+  }
+  body.dark-theme a {
+    color:#B0B3B8;
+  }
+  body.dark-theme a:hover {
+    color: $secondary-color;
+  }
+  body.dark-theme .post-title {
+    color: $white;
+  }
+  body.dark-theme .ti-menu {
+    color: $white;
+  }
+  body.dark-theme .ti-search {
+    color: $white;
+  }  
+  body.dark-theme footer {
+    background-color:black !important;
+  }
+  body.dark-theme .cookie-box {
+    background-color: #1E1E1E !important;
+  }
+  body.dark-theme h4 {
+    color: $white !important;
+  }
+  body.dark-theme h5{
+    color: $white !important;
+  }
+  body.dark-theme .nav-bg {
+    box-shadow: 0 0 10px $text-color;
+  }
+  body.dark-theme .search-box {
+    background-color: #242526;
+    color: $white;
+  }
+  body.dark-theme .ti-close {
+    color: $white !important;
+  }
+  body.dark-theme .page-link {
+    background: transparent;
+    color: $white !important;
+  }
+
+h3 {
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+h5 {
+  font-weight: 500;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo-dark {
+  display: none;
+}
 
 .section {
   padding-top: 38px;
@@ -49,6 +107,10 @@
   margin-right: 5px;
   background-image: url("/images/banner/banner-bg.svg");
   background-size: contain;
+}
+
+body.dark-theme .main-carousel {
+  background-image: url("/images/banner/banner-bg-dark.svg") !important;
 }
 
 .c-img {
@@ -297,7 +359,7 @@ https://flickity.metafizzy.co
   display: none;
 }
 .switch-button .switch-button__label {
-  background-color: $white;
+  background-color: transparent;
   overflow: visible;
   box-shadow: inset 0px 0px 0px 2px $primary-color;
   width: 3rem;
@@ -326,7 +388,7 @@ https://flickity.metafizzy.co
   background-color: $secondary-color;
 }
 .switch-button .switch-button__disabled:checked + .switch-button__label {
-  background-color: $white;
+  background-color: transparent;
   box-shadow: inset 0px 0px 0px 2px gray;
 }
 .switch-button .switch-button__disabled:checked + .switch-button__label:before {
@@ -394,6 +456,8 @@ https://flickity.metafizzy.co
   overflow: hidden;
   min-height: 300px;
   max-height: 200px;
+  margin-bottom: 15px !important;
+  margin-top: 15px !important;
 }
 
 .post-meta-move {
@@ -441,9 +505,17 @@ https://flickity.metafizzy.co
 }
 
 .preview {
-  background-color: #fff;
   width: 100%;
 }
+
+body.dark-theme .img-cont {
+  background-color: red;
+}
+
+body.dark-theme .img-cont {
+  background-color: #3A3B3C;
+}
+
 .preview p {
   display: -webkit-box;
   -webkit-line-clamp: 7;
@@ -484,9 +556,9 @@ https://flickity.metafizzy.co
     -webkit-line-clamp: 2;
   }
   .btn-article {
-    transform: translateY(-1rem);
+    transform: translateY(1rem);
     float: right;
-    margin-right: 1%;
+    margin-right: 2.5%;
   }
   .img-cont {
     -webkit-mask-image:-webkit-gradient(linear, right bottom, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.3)));
@@ -660,7 +732,7 @@ https://flickity.metafizzy.co
 
 /* blog */
 .block {
-  padding: 30px 30px 20px;
+  padding: 20px 30px 20px;
   border-radius: 20px;
 }
 
@@ -681,9 +753,10 @@ https://flickity.metafizzy.co
       width: 40px;
       height: 40px;
       text-align: center;
+      line-height: 2;
       color: $text-color;
       border: 0;
-      border-radius: 5px;
+      border-radius: 100%;
 
       &:hover {
         background: $primary-color;
@@ -698,6 +771,9 @@ https://flickity.metafizzy.co
       }
     }
   }
+}
+.post-title{
+  color: $black;
 }
 .post-title:hover{
   text-decoration: underline;
