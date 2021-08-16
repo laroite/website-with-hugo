@@ -22,6 +22,8 @@ home = ["HTML", "AMP", "RSS", "JSON"]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+link = "plugins/flickity/flickity.css"
 
 # js plugins
 [[params.plugins.js]]
@@ -34,7 +36,8 @@ link = "plugins/search/fuse.min.js"
 link = "plugins/search/mark.js"
 [[params.plugins.js]]
 link = "plugins/search/search.js"
-
+[[params.plugins.js]]
+link = "plugins/flickity/flickity.pkgd.min.js"
 
 ########################### Navigation ###################################
 
