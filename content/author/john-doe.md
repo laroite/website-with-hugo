@@ -1,7 +1,7 @@
 +++
-title = "John Doe"
-image = "/images/author/john-doe.jpg"
-description = "Front end developer"
-+++
+description = "Administrador de sistemas"
+image = "/images/laroite_white.png"
+title = "laroite"
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
++++
+Con el pseudónimo de "laroite", el mismo que da nombre a este sitio web, se identifica el autor de este blog. Es un profesional en el campo de las tecnologías de la información y las comunicaciones, que ha decidido compartir en este espacio algunas de sus experiencias y conocimientos, así como exponer sus ideas sobre diversos temas de interés.
