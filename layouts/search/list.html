@@ -7,7 +7,9 @@
         <h3>Resultados de la búsqueda para
           <span class="text-primary">
             <script>
-              var str=(window.location.search).substr(3);var result=str.replace("+"," ");document.write(result);</script>
+              var str=(window.location.search).substr(3);
+              var result=str.replace(/\+/g," ").replace("%C3%B3","ó").replace(/\%C3\%93/g,"Ó").replace(/\%C3\%A1/g,"á").replace(/\%C3\%81/g,"Á").replace(/\%C3\%A9/g,"é").replace(/\%C3\%89/g,"É").replace(/\%C3\%AD/g,"í").replace(/\%C3\%8D/g,"Í").replace(/\%C3\%B3/g,"ó").replace(/\%C3\%93/g,"Ó").replace(/\%C3\%BA/g,"ú").replace(/\%C3\%9A/g,"Ú").replace(/\%C3\%BC/g,"ü").replace(/\%C3\%9C/g,"Ü").replace(/\%C3\%B1/g,"ñ").replace(/\%C3\%91/g,"Ñ")
+              document.write(result);</script>
           </span>
         </h3>
         <div class="block shadow">

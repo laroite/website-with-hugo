@@ -60,7 +60,7 @@
           
             
             <li class="nav-item">
-              <a class="nav-link" href="https://laroite.com/contact">Contact</a>
+              <a class="nav-link" href="https://laroite.com/contact">Acerca de</a>
             </li>
             
           
@@ -71,7 +71,7 @@
           <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
           <div class="search-wrapper">
             <form action="https://laroite.com/search" class="h-100">
-              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Escribe y pulsa Enter...">
             </form>
             <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
           </div>
@@ -90,7 +90,9 @@
         <h3>Resultados de la búsqueda para
           <span class="text-primary">
             <script>
-              var str=(window.location.search).substr(3);var result=str.replace("+"," ");document.write(result);</script>
+              var str=(window.location.search).substr(3);
+              var result=str.replace(/\+/g," ").replace("%C3%B3","ó").replace(/\%C3\%93/g,"Ó").replace(/\%C3\%A1/g,"á").replace(/\%C3\%81/g,"Á").replace(/\%C3\%A9/g,"é").replace(/\%C3\%89/g,"É").replace(/\%C3\%AD/g,"í").replace(/\%C3\%8D/g,"Í").replace(/\%C3\%B3/g,"ó").replace(/\%C3\%93/g,"Ó").replace(/\%C3\%BA/g,"ú").replace(/\%C3\%9A/g,"Ú").replace(/\%C3\%BC/g,"ü").replace(/\%C3\%9C/g,"Ü").replace(/\%C3\%B1/g,"ñ").replace(/\%C3\%91/g,"Ñ")
+              document.write(result);</script>
           </span>
         </h3>
         <div class="block shadow">
@@ -139,7 +141,7 @@
       </div>
     </div>
     <div class="text-center mt-4">
-      <span>© 2020 <a href="https://gethugothemes.com">Gethugothemes</a> All Rights Reserved</span>
+      <span>© 2021 <a href="https://gethugothemes.com">Gethugothemes</a> All Rights Reserved</span>
     </div>
   </div>
 </footer>

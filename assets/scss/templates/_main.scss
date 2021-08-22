@@ -3,6 +3,19 @@
   background-image: url(../images/backgrounds/pattern.png);
 } */
 
+.nav-link {
+  text-transform: none !important;
+  padding-left: 10px !important;
+  padding-right: 20px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.ti-search {
+  font-size: 18px !important;
+  line-height: 3;
+}
+
 /* Dark mode */
   body.dark-theme {
       background-color: #18191A;

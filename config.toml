@@ -10,7 +10,7 @@ home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
 author = "Themefisher"
 contact_form_action = "#"
-copyright = "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
+copyright = "&copy; 2021 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
 description = "This is meta description"
 google_tag_manager = ""
 home = "Inicio"
