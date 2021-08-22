@@ -4,7 +4,7 @@
 <!-- Flickity HTML init -->
 <div class="main-carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true }'>
   {{ range .Pages }}
-  {{ if in .Params.categories "New"  }}
+  {{ if in .Params.categories "Destacado"  }}
       <div class="c-item">
         <div class="c-tbox article-content">
           <h3 class="c-title"><a class="post-title c-titletext" href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h3>
