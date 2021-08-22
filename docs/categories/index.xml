@@ -6,31 +6,22 @@
     <description>Recent content in Categories on laroite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 07 Jan 2020 05:00:00 +0000</lastBuildDate><atom:link href="https://laroite.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Aug 2021 05:00:00 +0000</lastBuildDate><atom:link href="https://laroite.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Destacado</title>
+      <link>https://laroite.com/categories/destacado/</link>
+      <pubDate>Sat, 07 Aug 2021 05:00:00 +0000</pubDate>
+      
+      <guid>https://laroite.com/categories/destacado/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Design Tools</title>
       <link>https://laroite.com/categories/design-tools/</link>
       <pubDate>Tue, 07 Jan 2020 05:00:00 +0000</pubDate>
       
       <guid>https://laroite.com/categories/design-tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>New</title>
-      <link>https://laroite.com/categories/new/</link>
-      <pubDate>Tue, 07 Jan 2020 05:00:00 +0000</pubDate>
-      
-      <guid>https://laroite.com/categories/new/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Destacado</title>
-      <link>https://laroite.com/categories/destacado/</link>
-      <pubDate>Thu, 07 Nov 2019 05:00:00 +0000</pubDate>
-      
-      <guid>https://laroite.com/categories/destacado/</guid>
       <description></description>
     </item>
     
@@ -58,6 +49,15 @@
       <pubDate>Thu, 07 Nov 2019 05:00:00 +0000</pubDate>
       
       <guid>https://laroite.com/categories/meta-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New</title>
+      <link>https://laroite.com/categories/new/</link>
+      <pubDate>Thu, 07 Nov 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://laroite.com/categories/new/</guid>
       <description></description>
     </item>
     

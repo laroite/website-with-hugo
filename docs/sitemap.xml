@@ -3,22 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://laroite.com/categories/</loc>
-    <lastmod>2020-01-07T05:00:00+00:00</lastmod>
+    <lastmod>2021-08-07T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://laroite.com/categories/destacado/</loc>
+    <lastmod>2021-08-07T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://laroite.com/</loc>
+    <lastmod>2021-08-07T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://laroite.com/post-de-ejemplo/</loc>
+    <lastmod>2021-08-07T05:00:00+00:00</lastmod>
   </url><url>
     <loc>https://laroite.com/categories/design-tools/</loc>
     <lastmod>2020-01-07T05:00:00+00:00</lastmod>
   </url><url>
     <loc>https://laroite.com/my-awesome-blog-post-2/</loc>
     <lastmod>2020-01-07T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://laroite.com/</loc>
-    <lastmod>2020-01-07T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://laroite.com/categories/new/</loc>
-    <lastmod>2020-01-07T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://laroite.com/categories/destacado/</loc>
-    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
     <loc>https://laroite.com/categories/development-tools/</loc>
     <lastmod>2019-11-07T05:00:00+00:00</lastmod>
@@ -56,6 +56,9 @@
     <loc>https://laroite.com/my-awesome-blog-post-4/</loc>
     <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://laroite.com/categories/new/</loc>
+    <lastmod>2019-11-07T05:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://laroite.com/categories/seo-learning/</loc>
     <lastmod>2019-11-07T05:00:00+00:00</lastmod>
   </url><url>
@@ -65,9 +68,7 @@
   </url><url>
     <loc>https://laroite.com/contact/contact/</loc>
   </url><url>
-    <loc>https://laroite.com/author/john-doe/</loc>
-  </url><url>
-    <loc>https://laroite.com/post-de-ejemplo/</loc>
+    <loc>https://laroite.com/author/laroite/</loc>
   </url><url>
     <loc>https://laroite.com/search/</loc>
   </url><url>

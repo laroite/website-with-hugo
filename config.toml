@@ -21,25 +21,25 @@ contact_form_action = "#"
 copyright = "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
 description = "This is meta description"
 google_tag_manager = ""
-home = "Home"
+home = "Inicio"
 logo = "images/logo.svg"
 logoDark = "images/logo_d.svg"
 [params.banner]
 bgImage = "images/banner/banner-bg.svg"
 image = "images/banner/illustration.svg"
-title = "Hola! Buscabas un espacio tec? Aquí lo tienes..."
+title = "Tecnología, noticias y contenido técnico."
 [params.cookies]
 enable = true
 expire_days = 365
 [params.cta]
-description = "En laroite.com encontrarás contenido técnico, noticias explicadas, e información relevante sobre las tecnologías que mueven el mundo."
+description = "En laroite.com encontrarás contenido técnico, noticias, comentarios, e información relevante sobre las tecnologías que mueven el mundo."
 enable = true
 image = "images/more-info.svg"
 title = "¿De qué va esta web?"
 [params.cta.button]
 enable = true
-label = "Visit Here"
-link = "https://gethugothemes.com/shop/"
+label = "Saber más"
+link = "author/laroite"
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]

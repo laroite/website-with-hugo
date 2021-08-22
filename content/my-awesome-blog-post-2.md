@@ -1,6 +1,6 @@
 +++
-author = "John Doe"
-categories = ["Design Tools", "New"]
+author = "laroite"
+categories = ["Design Tools", "Destacado"]
 date = 2020-01-07T05:00:00Z
 description = "This is meta description"
 image = "/images/post/post-2.jpg"
