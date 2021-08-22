@@ -5,10 +5,6 @@ paginate = "5"
 summaryLength = "50"
 theme = "northendlab-hugo"
 title = "laroite"
-[[menu.footer]]
-URL = "contact"
-name = "Contact"
-weight = 1
 [[menu.main]]
 URL = "contact"
 name = "Contact"
