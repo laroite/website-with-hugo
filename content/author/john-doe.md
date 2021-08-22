@@ -1,5 +1,5 @@
 +++
-description = "Administrador de sistemas"
+description = "Autor del blog"
 image = "/images/laroite_white.png"
 title = "laroite"
 
