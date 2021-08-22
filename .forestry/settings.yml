@@ -30,7 +30,7 @@ sections:
   path: exampleSite/documentation
   label: Documentation
 - type: directory
-  path: exampleSite/content/contact
+  path: content/contact
   label: Contact
   create: all
   match: "**/*"
