@@ -12,7 +12,7 @@ sections:
   templates:
   - post
 - type: directory
-  path: exampleSite/data
+  path: data
   label: Tools
   create: documents
   match: "**/*"
@@ -20,7 +20,7 @@ sections:
   templates:
   - tools
 - type: directory
-  path: exampleSite/content/author
+  path: content/author
   label: Author
   create: documents
   match: "**/*"
