@@ -1,10 +1,10 @@
 +++
-title = "Esta Web se encuentra en construcción."
-image = "/images/post/post-2.jpg"
 author = "John Doe"
+categories = ["Design Tools", "New"]
 date = 2020-01-07T05:00:00Z
 description = "This is meta description"
-categories = ["Design Tools","New"]
+image = "/images/post/post-2.jpg"
+title = "Esta Web se encuentra en construcción. No está terminada."
 type = "post"
 
 +++
