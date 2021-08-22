@@ -1,31 +1,59 @@
-############################ Default configuration #########################
 baseURL = "https://laroite.com/"
+disqusShortname = ""
 languageCode = "es"
-# site title 
-title = "Northendlab | Blog Template"
-# theme
-theme = "northendlab-hugo"
-# post pagination
 paginate = "5"
-# post excerpt
 summaryLength = "50"
-# disqus short name
-disqusShortname = "" # get your shortname form here : https://disqus.com
-
+theme = "northendlab-hugo"
+title = "laroite"
+[[menu.footer]]
+URL = "contact"
+name = "Contact"
+weight = 1
+[[menu.footer]]
+URL = "tools"
+name = "Tools"
+weight = 2
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 1
+[[menu.main]]
+URL = "tools"
+name = "Tools"
+weight = 2
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]
-
-########################## Plugings ######################################
-
-# css plugins
+[params]
+author = "Themefisher"
+contact_form_action = "#"
+copyright = "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
+description = "This is meta description"
+google_tag_manager = ""
+home = "Home"
+logo = "images/logo.svg"
+logoDark = "images/logo_d.svg"
+[params.banner]
+bgImage = "images/banner/banner-bg.svg"
+image = "images/banner/illustration.svg"
+title = "Hola! Buscabas un espacio tec? Aquí lo tienes..."
+[params.cookies]
+enable = true
+expire_days = 365
+[params.cta]
+description = "En laroite.com encontrarás contenido técnico, noticias explicadas, e información relevante sobre las tecnologías que mueven el mundo."
+enable = true
+image = "images/more-info.svg"
+title = "¿De qué va esta web?"
+[params.cta.button]
+enable = true
+label = "Visit Here"
+link = "https://gethugothemes.com/shop/"
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/themify-icons/themify-icons.css"
 [[params.plugins.css]]
 link = "plugins/flickity/flickity.css"
-
-# js plugins
 [[params.plugins.js]]
 link = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
@@ -38,93 +66,20 @@ link = "plugins/search/mark.js"
 link = "plugins/search/search.js"
 [[params.plugins.js]]
 link = "plugins/flickity/flickity.pkgd.min.js"
-
-########################### Navigation ###################################
-
-# main menu
-[[menu.main]]
-URL = "contact"
-name = "Contact"
-weight = 1
-
-[[menu.main]]
-URL = "tools"
-name = "Tools"
-weight = 2
-
-# footer menu
-[[menu.footer]]
-URL = "contact"
-name = "Contact"
-weight = 1
-
-[[menu.footer]]
-URL = "tools"
-name = "Tools"
-weight = 2
-
-
-######################### Default Parameters ###########################
-[params]
-# home
-home = "Home"
-# logo
-logo = "images/logo.svg"
-# logo dark mode
-logoDark = "images/logo_d.svg"
-# meta data
-author = "Themefisher"
-description = "This is meta description"
-# google tag manager
-google_tag_manager = '' # your id
-# contact form action
-contact_form_action = "#" # contact form works with : https://formspree.io
-# copyright
-copyright = "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
-
-# preloader
 [params.preloader]
 enable = true
-preloader = "" # use png, jpg, svg or gif format
-
-# search
+preloader = ""
 [params.search]
 enable = true
-
-# cookies
-[params.cookies]
-enable = true
-expire_days = 365
-
-####################### banner #######################################
-[params.banner]
-bgImage = "images/banner/banner-bg.svg"
-title = "Hola! Buscabas un espacio tec? Aquí lo tienes..."
-image = "images/banner/illustration.svg"
-
-
-######################## call to action ###############################
-[params.cta]
-enable = true
-image = "images/more-info.svg"
-title = "¿De qué va esta web?"
-description = "En laroite.com encontrarás contenido técnico, noticias explicadas, e información relevante sobre las tecnologías que mueven el mundo."
-[params.cta.button]
-enable = true
-label = "Visit Here"
-link = "https://gethugothemes.com/shop/"
-
-
-############################## Social Site ##########################
 [[params.social]]
-icon = "ti-facebook" # themify icon pack https://themify.me/themify-icons
+icon = "ti-facebook"
 link = "#"
 [[params.social]]
-icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
+icon = "ti-twitter-alt"
 link = "#"
 [[params.social]]
-icon = "ti-github" # themify icon pack https://themify.me/themify-icons
+icon = "ti-github"
 link = "#"
 [[params.social]]
-icon = "ti-linkedin" # themify icon pack https://themify.me/themify-icons
+icon = "ti-linkedin"
 link = "#"
